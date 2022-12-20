@@ -21,7 +21,7 @@ netflix['duration']=netflix['duration'].astype(str)
 
 # nc=['show_id', 'type', 'title', 'director', 'cast', 'country', 'date_added','release_year', 'rating', 'duration', 'seasons', 'listed_in', 'description']
 # netflix=netflix.reindex(columns=nc)
-netflix.columns=netflix.columns.str.upper()
+#netflix.columns=netflix.columns.str.upper()
 
 
 netflix.to_csv('netflix_titles_transformed.csv', index=False)
